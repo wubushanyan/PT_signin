@@ -3,6 +3,8 @@ name: signin
 on:
   watch:
     types: [ started ]
+  workflow_dispatch:
+  push: # 注释掉后仓库有 update 时不执行 main.py
   schedule:
     - cron: "0 22 * * *"
 
